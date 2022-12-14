@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Mochiy+Pop+One&display=swap');
+
+
+/* Pre_Defined section */
+:root{
+    --subheading-bg-color:#5f68a0;
+    --subheading-text-color: #fafdeb;
+    --logo-color: #0eb2be;
+    --navbar-text-color: #8b941e;
+    --bg-color: #fafdeb;
+    --h1-text-color: #f76b08;
+    --h2-text-color: #3bb039;
+    --other-text-color: #8b8fab;
+    --primary-btn-bgcolor: #fdfdfe;
+    --secondary-btn-bgcolor: #3dabe3;
+    --footer-bg-color: rgb(85, 19, 88);
+    --subfooter-bg-color: rgb(85, 81, 81);
+    --subfooter-text-color: rgb(177, 173, 173);
+    --padding-inline-section: 1rem;
+}
+
+.dark-mode{
+    --subheading-bg-color:rgb(31, 31, 49);
+    --subheading-text-color: lightyellow;
+    --logo-color: rgb(245, 171, 182);
+    --navbar-text-color: rgb(148, 145, 145);
+    --bg-color: rgb(18, 17, 17);
+    --h1-text-color: rgb(247, 188, 39);
+    --h2-text-color: rgb(66, 164, 125);
+    --other-text-color: #5a608e;
+    --primary-btn-bgcolor: rgb(67, 68, 67);
+    --secondary-btn-bgcolor: rgb(255, 140, 0);
+    --footer-bg-color: rgb(2, 8, 37);
+    --subfooter-bg-color: rgb(28, 27, 27);
+    --subfooter-text-color: white;
+}
+
+/* Reusible Section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: var(--other-text-color);
+    word-spacing: 2px;
+    background-color: var(--bg-color);
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--h1-text-color);
+}
+h2{
+    color: var(--h2-text-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+.hover-link{
+    font-size: 0.9rem;
+    color: var(--navbar-text-color);
+    transition: 0.3s ease-out;
+}
+.hover-link:hover, .hover-link.active{
+    color: var(--logo-color);
+}
+.primary-btn{
+    background-color: var(--primary-btn-bgcolor);
+    border-radius: 0.5px 1rem;
+    color: var(--secondary-btn-bgcolor);
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 2px 4px var(--secondary-btn-bgcolor);
+    text-align: center;
+    margin-bottom: 5px;
+}
+.primary-btn:hover{
+    background-color: var(--secondary-btn-bgcolor);
+    color: aliceblue;
+}
+.secondary-btn{
+    border: 1.5px solid var(--secondary-btn-bgcolor);
+    border-radius: 0.5px 1rem;
+    color: var(--secondary-btn-bgcolor);
+    padding: 0.4rem 0.7rem;
+    transition: 0.3s ease-out;
+}
+.secondary-btn:hover{
+    border: 1.5px solid var(--h1-text-color);
+    color: var(--h2-text-color);
+    box-shadow: 0px 2px 4px var(--h2-text-color);
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Top banner section */
+.small-bolt-text{
+    font-size: 0.8rem;
+}
+.banner-text{
+    color: var(--subheading-text-color);
+    padding: 15px 30px;
+    text-align: center;
+}
+.top-banner{
+    background-color: var(--subheading-bg-color);
+}
+
+/* Navbar section */
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.company-logo{
+    font-size: 1.2rem;
+    color: var(--logo-color);
+    cursor: default;
+}
+.company-logo i{
+    display: inline-block;
+    font-size: 2.5rem;
+}
+.nav-links ul{
+    gap: 2rem;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+.nav-toggle{
+    display: none;
+}
+
+/* Header section */
+header{
+    padding: 50px var(--padding-inline-section);
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+}
+.get-start{
+    margin-top: 2rem;
+}
+
+/* Company Section */
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    flex-direction: column;
+    gap: 2rem;
+}
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.logo img{
+    max-width: 5rem;
+}
+
+/* Features section */
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+}
+.features-header{
+    text-align: center;
+}
+.features-header h3{
+    padding: 20px 0px;
+}
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 2rem;
+    background-color: var(--bg-color);
+    padding: 2.5rem var(--padding-inline-section);
+    border-radius: .5rem 5rem;
+}
+.features-card{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.features-card img{
+    max-width: 80px;
+}
+
+/* Big-feature Section */
+.bigfeature-section{
+    padding: 50px var(--padding-inline-section) 0;
+}
+.big-feature{
+    gap: 30px;
+}
+.bigfeature-img img{
+    width: 100%;
+}
+.bigfeature-text{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Examples Section */
+.examples-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background: black;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/Portfolio.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem 3rem;
+    transition: 0.3s ease-in-out;
+}
+.card-text{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    color: white;
+    padding: 10px;
+}
+.examples-area{
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+.examples-card:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/Modern\ Catering.png);
+    background-position: center;
+    background-size: cover;
+}
+.examples-card:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/Photography.png);
+    background-position: center;
+    background-size: cover;
+}
+.examples-card:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(image/Gallary.png);
+    background-position: center;
+    background-size: cover;
+}
+.examples-card:hover{
+    box-shadow: 0px 3px 10px var(--logo-color);
+}
+.features-header h2{
+    margin: 1rem;
+}
+
+/* CTA Section */
+.cta-section{
+    background-color: var(--footer-bg-color);
+}
+.cta-header{
+    padding: 10px var(--padding-inline-section);
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    color: var(--footer-text-color);
+}
+
+/* Sub-footer Section */
+.subfooter{
+    background-color: var(--subfooter-bg-color);
+}
+.subfooter-section{
+    justify-content: space-evenly;
+    padding: 20px var(--padding-inline-section);
+    transition: 0.3 ease-out;
+}
+.subfooter-section a{
+    color: var(--subfooter-text-color);
+}
+.subfooter-section a:hover{
+    color: var(--logo-color);
+}
+.subfooter-section a i{
+    font-size: 2rem;
+}
+.scroll-top{
+	position: fixed;
+	bottom: 2rem;
+	right: 1rem;
+}
